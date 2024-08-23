@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Old Maid Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <button id="how-to-play">How to Play</button>
+        <h1 id="game-title">Old Maid</h1>
+        <button id="start-game">Start Game</button>
+        
+        <div id="players-container">
+            <!-- Player 1's hand -->
+            <div id="player1" class="player-hand">
+                <!-- Player 1's hand will go here -->
+            </div>
+            <!-- Turn Arrow -->
+            <div id="turn-indicator">
+                <img id="turn-arrow" src="images/arrow.png" alt="Turn Arrow" />
+                <button id="ready-button" style="display: none;">Ready</button>
+            </div>
+            <!-- Player 2's hand -->
+            <div id="player2" class="player-hand">
+                <!-- Player 2's hand will go here -->
+            </div>
+        </div>
+    </div>
+    <!--Game Log-->
+    <div id="message-box">
+        <p id="game-log"></p>
+    </div>
+
+    <!--How to Play pop-up-->
+    <div id="how-to-play-popup" class="popup">
+        <div class="popup-content">
+            <span id="close-popup">&times;</span>
+            <h2>How to Play Old Maid!</h2>
+            <p>
+                Old Maid is a simple card game. The objective is to avoid being the player left with the unmatched card, known as the Old Maid.
+                <br><br>
+                1. All players are dealt an equal number of cards. One card, usually a Queen, is removed to create the Old Maid.
+                <br>
+                2. Players remove pairs of matching cards from their hand.
+                <br>
+                3. Players take turns drawing a card from the next player's hand.
+                <br>
+                4. If the drawn card forms a pair with another card in hand, the pair is removed.
+                <br>
+                5. The game continues until all pairs are removed and only the Old Maid remains.
+                <br>
+                Have Fun!
+            </p>
+        </div>
+    </div>    
+    <script src="script.js"></script>
+</body>
+</html>
